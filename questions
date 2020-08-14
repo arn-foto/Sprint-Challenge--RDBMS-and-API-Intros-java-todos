@@ -1,0 +1,29 @@
+
+Interview questions.
+
+1) Can you explain your data model, data schema to me?
+
+Within "Models" I created the data types for "todos" and "users" to specify their roles
+throughout the application. I was able to combine the data by using a "one to many" &
+"many to many" annotations.
+
+
+2) Can you explain how you connected your API to a database?
+
+By creating a "controller" for both user & todo. Within those controllers
+I created endpoints that serve as a different function for getting data (getMapping),
+one for deleting data(deleteMapping), one for posting new data to a database(postMapping)
+and one for updating current data(patchMapping). The getters are called by the "autowired"
+annotation to connect to the controllers.
+
+
+3) Can you explain the flow of data from client through the backend system and back to the client?
+
+The client provides data that needs to be sorted and organized. Once it gets to the backend then custom
+packages are created to handle that data accordingly into an endpoint that the client can use to see their sorted data.
+
+
+4) How did you handle querying in your application: custom querying vs JPA Querying?
+
+created a custom query within the "userRepository" using a SQL format that
+  takes a list of UserNameCountTodos which includes the username and count of non-completed todos.
