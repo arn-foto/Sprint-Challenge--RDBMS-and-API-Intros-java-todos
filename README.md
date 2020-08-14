@@ -1771,7 +1771,7 @@ You will be creating a REST api service to store and read data from an H2 databa
 
 - [ ] Please fork and clone this repository. This repository has a starting application called todos. You must start working from there. Regularly commit and push your code as appropriate.
 
-- [ ] The initial application contains the model for the users table. Endpoints are already created and the structure for auditing fields is in place. You are adding the model for the todos table and updating the services to work with the new table.
+- [ ] The initial application contains the model for the users table. Endpoints are already created and the structure for auditiong fields is in place. You are adding the model for the todos table and updating the services to work with the new table.
 
 - [ ] TODOS
   - `todoid` primary key, not null long
@@ -1785,9 +1785,9 @@ You will be creating a REST api service to store and read data from an H2 databa
 
 The following end points are already available in the initial application. You are to make sure the end points work with the newly added todos table
 
-- [ ] GET /users/users - return all of the users and their todos.
+- [ ] GET /users/users - return all of the users and their todos. If the todos table is added correctly, the Controller, Service, and Repository for this end point should not change!
 
-- [ ] GET /users/user/{userid} - return the user and their todos based off of user id.
+- [ ] GET /users/user/{userid} - return the user and their todos based off of user id. If the todos table is added correctly, the Controller, Service, and Repository for this end point should not change!
 
 - [ ] POST /users/user - adds a user with their todos
 
@@ -1811,7 +1811,7 @@ The following end points are already available in the initial application. You a
 
 - [ ] PATCH /todos/todo/{todoid} - mark a todo as completed.
 
-- [ ] DELETE /users/user/{userid} - Deletes a user based off of their userid and deletes all their associated todos.
+- [ ] DELETE /users/user/{userid} - Deletes a user based off of their userid and deletes all their associated todos. If the todos table is added correctly, the Controller, Service, and Repository for this end point should not change!
 
 ### Required best practices
 
@@ -1834,3 +1834,6 @@ In your solution, it is essential that you follow best practices and produce cle
   - Order the list by username!
   
 - [ ] Add in 100 more random users each with a random number (0 - 3) of random todos. The todos descriptions should be something random as well. For my example, I picked Pokemon names!
+ testing
+ testing 
+ 1 2 3 4
